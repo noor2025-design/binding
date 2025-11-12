@@ -4,5 +4,19 @@ body {
 
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5rem;
-    text-align: justify;
+}
+
+nav ol a {
+    display: flex;
+}
+
+nav ol a {
+    color: hotpink;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+h1 {
+    margin-block-end: 1rem;
 }
