@@ -1,0 +1,45 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+p {
+  margin-bottom: 1rem; 
+}
+
+p {
+  margin-bottom: 1rem; 
+}
+
+p {
+  text-align: justify;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: transparent; 
+  text-align: center;
+  padding: 1rem 2rem;
+  border-top: none;
+}
+
+.bottom-nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #fff;             
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.bottom-nav a:hover {
+  color: #999;             
+}
+
+.bottom-nav {
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
