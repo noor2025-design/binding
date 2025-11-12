@@ -1,18 +1,21 @@
 :root {
-    --bg-color: papayawhip;
-    --fg-color: tomato;
+    --bg-color: white;
+    --fg-color: black;
 }
 
 @media (prefers-color-scheme:dark) {
     :root {
-        --bg-color: #333;
-        --fg-color: papayawhip;
+        --bg-color: black;
+        --fg-color: white;
     }
 }
 
 body{
-    padding:2.5rem;
     background-color: var(--bg-color);
-    color: var(--fg-color)
-
+    color: var(--fg-color);
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding:2.5rem;
+    max-width: 700px;
+    line-height: 1.6;
 }
