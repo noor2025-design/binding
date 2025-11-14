@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align:justify;
 
@@ -46,4 +46,49 @@ header h1{
     font-size: 1rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 1rem;
+} */
+
+#article-2{
+    width: 100%;
+    height: 100px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
 }
+.article-2-links{
+    border: 5px black solid;
+    padding: 20px;
+}
+#article-2-intro{
+    display: flex;
+    width: 85%;
+    height: 80vh;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#article-2-intro header{
+    display:flex;
+    flex-direction: column;
+    
+}
+#article-2-intro header,#article-2-intro #right-column{
+    width: calc(50% - 2.5px);
+   
+}
+#article-2-divider{
+    width: 5px;
+    height: 70%;
+    background-color: black;
+}
+#right-column{
+    padding: 3rem 5rem;
+}
+#right-column p{
+margin-bottom: 2rem;
+}
+/* #article-2-intro h1{
+    font-size: ;
+} */
