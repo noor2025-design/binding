@@ -1,11 +1,11 @@
 body {
-    background-color: white;
+    background-color: #DBB71E;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
 }
 
-nav ol a {
+/* nav ol a {
     display: flex;
 }
 
@@ -15,15 +15,12 @@ nav ol a {
     &:hover {
         text-decoration: underline;
     }
-}
+} */
 h1 {
     margin-block-end: 1rem;
 }
 
 .bottom-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   background: transparent; 
   text-align: center;
@@ -43,11 +40,47 @@ h1 {
   color: #999;             
 }
 
-.bottom-nav {
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
-}
 
 article p{
     margin-bottom: 2em;
     line-height: 1.6;
+}
+
+#chapter-3-header{
+    border: #fff 5px solid;
+    padding: 50px 30px;
+    margin: 50px auto 10px auto;
+    width: clamp(300px,50vw,500px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#chapter-3-header h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 3em;
+}
+#chapter-3-links{
+    width: clamp(300px,50vw,500px);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+#article-background{
+    display:flex;
+    width: 90%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+#side-text{
+    width: 15%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#main-side-text{
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    font-size: 72px;
 }
