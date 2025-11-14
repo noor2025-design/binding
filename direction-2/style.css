@@ -63,10 +63,10 @@ header h1{
 #article-2-intro{
     display: flex;
     width: 85%;
-    height: 80vh;
+    /* height: 80vh; */
     justify-content: center;
     margin: 0 auto;
-    align-items: center;
+    /* align-items: center; */
 }
 
 #article-2-intro header{
@@ -74,14 +74,18 @@ header h1{
     flex-direction: column;
     
 }
+#article-2-intro header h1{
+    font-size: clamp(32px, 8vw,92px);
+}
 #article-2-intro header,#article-2-intro #right-column{
     width: calc(50% - 2.5px);
    
 }
 #article-2-divider{
     width: 5px;
-    height: 70%;
+    height: 50vh;
     background-color: black;
+    align-self: center;
 }
 #right-column{
     padding: 3rem 5rem;
@@ -92,3 +96,16 @@ margin-bottom: 2rem;
 /* #article-2-intro h1{
     font-size: ;
 } */
+ #original-article{
+    width: 85%;
+    margin: 0 auto;
+ }
+ #original-article p{
+    margin-bottom: 2rem;
+ }
+ #original-article blockquote{
+    margin: 30px 0;
+    padding: 0 40px;
+    text-align: center;
+    font-size: clamp(22px,5vw,36px);
+ }
