@@ -42,7 +42,7 @@ h1 {
 
 
 article p{
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
     line-height: 1.6;
 }
 
@@ -64,8 +64,8 @@ article p{
     width: clamp(300px,50vw,500px);
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    margin: 40px auto 50px auto;
+   
 }
 #article-background{
     display:flex;
@@ -80,6 +80,7 @@ article p{
     justify-content: center;
     align-items: center;
     transform: rotate(-90deg);
+    color: #DBB71E;
 }
 #main-side-text{
     white-space: nowrap;
@@ -116,5 +117,9 @@ article p{
     font-style: italic;
     border: 8px #DBB71E solid;
     height: auto;
+    
+}
+#original-article>p{
+    margin: 20px 0;
     
 }

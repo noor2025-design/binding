@@ -107,3 +107,10 @@ margin-bottom: 2rem;
     font-style: italic;
     color: #A49657;
  }
+ #horizontal-line{
+    height: 5px;
+    width: 50vw;
+    background-color: black;
+    margin: 40px auto 100px auto;
+
+ }
