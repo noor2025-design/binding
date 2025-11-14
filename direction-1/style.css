@@ -69,13 +69,18 @@ header{
     width: auto;
 }
 #main-chapter-1{
-
-    /* border-left: 2px black solid; */
-    width: 70%;
+    margin-left: 10vw; 
+    border-left: 2px black solid;
+    border-right:2px black solid;
+    width: calc(70% - 10vw);
 }
 #article-top{
     width: 100%;
-    border-right:2px black solid;
-     margin-left: 10vw; 
+     /* margin-left: 10vw;  */
+
+}
+#article-bottom{
+    margin-left: 10vw; 
     border-left: 2px black solid;
+
 }
