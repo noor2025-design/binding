@@ -31,6 +31,8 @@ body {
     align-items: center;
     position: relative;
     height: 50vh;
+    font-family: "Big Shoulders Inline", sans-serif;
+    color: white;
 }
 #header-landing img{
     position:absolute;
@@ -53,9 +55,11 @@ body {
      width: 33%;
      text-transform: uppercase;
      z-index: 2;
+    font-family: "Big Shoulders Inline", sans-serif;
 }
 #landing-subtitle{
      font-size: 2rem;
+    
 }
 /* h1 span{
     display: block;
@@ -70,6 +74,10 @@ body {
     flex-direction: column;
     z-index: 2;
 }
+#main-landing p {
+    font-family: "Big Shoulders Inline", sans-serif;
+    color: #EA5916;
+}
 #table-of-contents{
     display: flex;
     z-index: 2;
@@ -83,12 +91,12 @@ body {
 #horizontal-line{
     width: 50px;
     height:10px;
-    background-color: black;
+    background-color: #EA5916;
 }
 #vertical-line{
-     width: 50px;
+    width: 50px;
     height: 10px;
-    background-color: rgb(159, 42, 42);
+    background-color: #DBB71E;
     position: absolute;
     transform: rotate(-90deg);
 
