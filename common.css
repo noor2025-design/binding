@@ -17,7 +17,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    /* height: 100vh; */
 }
 /* header, section, footer {
     max-width: 800px;
@@ -29,18 +29,21 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    height: 50vh;
+}
+#header-landing img{
+    position:absolute;
+    transform: scale(4) translateY(-30%);
+
 
 }
-#header-phrases{
-    height: 5px;
-    width: 10%;
-    background-color: var(--bg-color);
-}
+
 
 #landing-title {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     font-size: 6rem;
     font-weight: 800;
     text-align: center;
@@ -49,25 +52,55 @@ body {
     letter-spacing: -0.03em;
      width: 33%;
      text-transform: uppercase;
+     z-index: 2;
+}
+#landing-subtitle{
+     font-size: 2rem;
 }
 /* h1 span{
     display: block;
 } */
-#header-landing p{
-    text-align: center;
-    color: #444;
-    /* margin-bottom: 2rem; */
-    width: 33%;
-}
+
 
 #main-landing{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
-    height:70%;
+    height: 50vh;
+    flex-direction: column;
+    z-index: 2;
 }
-#main-landing section{
+#table-of-contents{
+    display: flex;
+    z-index: 2;
+}
+#dropdown-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#horizontal-line{
+    width: 50px;
+    height:10px;
+    background-color: black;
+}
+#vertical-line{
+     width: 50px;
+    height: 10px;
+    background-color: rgb(159, 42, 42);
+    position: absolute;
+    transform: rotate(-90deg);
+
+}
+nav{
+  display: none;
+  flex-direction: column;  
+} 
+#table-of-contents:hover + nav{
+    display: flex;
+}
+/* #main-landing section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,7 +137,7 @@ h2{
     height: 80%;
     width: 5px;
     background-color: var(--bg-color);
-}
+} */
 
 
 
@@ -161,4 +194,12 @@ footer {
     border-top: 1px solid #eee;
     padding-top: 1rem;
     margin-top: 4rem;
+}
+@media screen and (min-width: 768px) {
+ #header-landing img{
+    transform: scale(2) translateY(-30%);
+
+
+}
+   
 }
