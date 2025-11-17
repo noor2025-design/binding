@@ -18,6 +18,7 @@ nav ol a {
 } */
 h1 {
     margin-block-end: 1rem;
+    font-family: "Allerta Stencil";
 }
 
 .bottom-nav {
@@ -117,6 +118,7 @@ article p{
     font-style: italic;
     border: 8px #DBB71E solid;
     height: auto;
+    font-family: "Allerta Stencil";
     
 }
 #original-article>p{

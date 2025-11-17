@@ -61,6 +61,7 @@
     /* height: 80vh; */
     justify-content: center;
     margin: 0 auto;
+    font-family: "Big Shoulders Stencil";
     /* align-items: center; */
 }
 
@@ -106,6 +107,7 @@ margin-bottom: 2rem;
     font-weight: bold;
     font-style: italic;
     color: #A49657;
+    font-family: "Big Shoulders Stencil";
  }
  #horizontal-line{
     height: 5px;
