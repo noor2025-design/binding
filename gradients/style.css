@@ -45,6 +45,7 @@ h1{
   padding: 3rem 0;
   font-size: 6rem;
   font-family: "Major Mono Display";
+  color:#DBB71E ;
 }
 
 header{
@@ -110,6 +111,7 @@ width: 100%;
     z-index: 2;
     padding-top: 40px;
     font-family: "Major Mono Display";
+    color: #1DF5A8;
 
 }
 .article-1-links{
@@ -131,4 +133,54 @@ article blockquote{
     width: 60%;
     margin-bottom: 20px;
     font-family: "Major Mono Display";
+    color: #DBB71E;
 }
+
+/* .splash {
+  position: fixed;
+  top: -150px;
+  left: -150px;
+  width: 500px;
+  height: 500px;
+  z-index: -1; 
+
+  background: radial-gradient(circle,
+    rgba(105, 255, 185, 0.5) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+
+  animation: drift 12s ease-in-out infinite alternate;
+}
+
+@keyframes drift {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(40px, -20px) scale(1.1); }
+  100% { transform: translate(-20px, 30px) scale(0.95); }
+} */
+
+.splash-bottom {
+  position: fixed;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  pointer-events: none;
+  z-index: -1;
+
+  background: radial-gradient(
+    circle at 50% 100%,
+    rgba(29, 245, 168, 0.45),   /* mint */
+    rgba(255, 255, 255, 0.25),
+    rgba(219, 183, 30, 0.35)    /* gold */
+  );
+
+  filter: blur(40px);
+  animation: splashMove 14s ease-in-out infinite alternate;
+}
+
+@keyframes splashMove {
+  0%   { transform: translateY(0) scale(1); }
+  100% { transform: translateY(20px) scale(1.15); }
+}
+
+  
