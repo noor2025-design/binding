@@ -102,7 +102,7 @@ body {
 
 }
 nav{
-  display: none;
+  /* display: none; */
   flex-direction: column;  
 } 
 #table-of-contents:hover + nav{
@@ -195,14 +195,14 @@ a:hover {
     color: #777;
 } */
 
-footer {
+/* footer {
     text-align: center;
     color: #666;
     font-size: 0.9 rem;
     border-top: 1px solid #eee;
     padding-top: 1rem;
     margin-top: 4rem;
-}
+} */
 @media screen and (min-width: 768px) {
  #header-landing img{
     transform: scale(2) translateY(-30%);

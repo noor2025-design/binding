@@ -14,9 +14,9 @@ article >p {
   padding-left: 1.5rem;
 }
 
-/* p {
+ p {
   text-align: justify;
-} */
+}
 
 .bottom-nav {
   width: 100%;
@@ -91,8 +91,8 @@ header{
    width: 40%; 
 }
 
-.width-70{
-    width: 70%; 
+.width-60{
+    width: 60%; 
 }
 
 .width-80{
@@ -102,7 +102,7 @@ header{
 width: 100%; 
 }
 #article-top blockquote{
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     right: 0;
     transform: translate(50%, 0px);
@@ -112,6 +112,7 @@ width: 100%;
     padding-top: 40px;
     font-family: "Major Mono Display";
     color: #1DF5A8;
+    line-height: 1;
 
 }
 .article-1-links{
@@ -127,7 +128,7 @@ article blockquote{
     font-style: italic;
     color: black;
     width: 30vw;
-    text-wrap: balance;
+    /* text-wrap: balance; */
 }
 #second-blockquote{
     width: 60%;
