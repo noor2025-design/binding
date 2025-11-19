@@ -114,7 +114,7 @@ width: 100%;
     width: 60%;
     margin-bottom: 20px;
     font-family: "Major Mono Display";
-    color: #1DF5A8;
+    color: #3A65FF;
     /* line-height: 1; */
 
 }
@@ -173,7 +173,7 @@ article blockquote{
 
   background: radial-gradient(
     circle at 50% 100%,
-    rgba(29, 245, 168, 0.45),   /* mint */
+    rgba(58, 101, 255, 1),   /* mint */
     rgba(255, 255, 255, 0.25),
     rgba(219, 183, 30, 0.35)    /* gold */
   );
