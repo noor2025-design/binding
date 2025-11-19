@@ -79,6 +79,7 @@ body {
 #main-landing p {
     font-family: "Big Shoulders Inline", sans-serif !important;
     color: #EA5916;
+    margin-bottom: 80px;
 }
 #dropdown-container{
     position: relative;
@@ -124,7 +125,7 @@ body {
   top: -100%;
   left: 0;
   right: 0;
-  border: black 2px solid;
+  /* border: black 2px solid; */
   padding: 10px 10px;
   transition: top 0.4s ease;
   border-radius: 10px;
