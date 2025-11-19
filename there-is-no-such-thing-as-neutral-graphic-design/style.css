@@ -2,6 +2,11 @@
 body{
     background-color:#3A65FF ;
 }
+#article-2-main{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
  .bottom-nav {
   width: 100%;
   background: transparent; 
@@ -41,7 +46,19 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 1rem;
 }  */
-
+  #header-subheading{
+    width: 50%;
+    margin: 0 auto;
+    position:relative;
+  }
+#header-subheading h1{
+    font-size: clamp(32px, 8vw,92px);
+    font-family: "Big Shoulders Stencil";
+}
+#header-subheading h2{
+    font-size: clamp(24px, 5vw,65px);
+    font-family: "Open Sans, sans serif";
+}
 #article-2{
     width: 100%;
     height: 100px;
@@ -54,43 +71,8 @@ body{
     border: 5px black solid;
     padding: 20px;
 }
-#article-2-intro{
-    display: flex;
-    width: 85%;
-    /* height: 80vh; */
-    justify-content: center;
-    margin: 0 auto;
-    font-family: "Big Shoulders Stencil";
-    /* align-items: center; */
-}
 
-#article-2-intro header{
-    display:flex;
-    flex-direction: column;
-    
-}
-#article-2-intro header h1{
-    font-size: clamp(32px, 8vw,92px);
-}
-#article-2-intro header,#article-2-intro #right-column{
-    width: calc(50% - 2.5px);
-   
-}
-#article-2-divider{
-    width: 5px;
-    height: 50vh;
-    background-color: black;
-    align-self: center;
-}
-#right-column{
-    padding: 3rem 5rem;
-}
-#right-column p{
-margin-bottom: 2rem;
-}
-/* #article-2-intro h1{
-    font-size: ;
-} */
+
  #original-article{
     width: 85%;
     margin: 0 auto;
@@ -108,10 +90,68 @@ margin-bottom: 2rem;
     color: #A49657;
     font-family: "Big Shoulders Stencil";
  }
- #horizontal-line{
+ .horizontal-line{
     height: 5px;
     width: 50vw;
     background-color: black;
     margin: 40px auto 100px auto;
+
+ }
+ #circle-word{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+ }
+ .small-circle{
+    border: white 2px solid;
+    padding: 30px;
+    border-radius: 50%;
+ }
+  .large-circle{
+    border: white 2px solid;
+    padding: 60px;
+    border-radius: 50%;
+    margin: 15px 0; 
+ }
+ #header-svg{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: clamp(800px, 100vw, 1200px);
+    display: none;
+ }
+ #blockquote-svg{
+    display: none;
+    position:absolute;
+    transform: scaleY(-1);
+    top: 0;
+    right: 0;
+    width: clamp(800px, 100vw, 1200px);
+ }
+ #blockquote-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+ }
+ @media screen and (min-width:768px) {
+     #header-subheading{
+    
+    margin: 0 0 0 auto;
+  }
+  .horizontal-line{
+    display: none;
+  }
+  #header-svg{
+    display: block;
+   
+  }
+  #blockquote-container blockquote{
+    width:60%;
+    margin-left: auto;
+ }
+  #blockquote-svg{
+    display:block;
+    
+  }
 
  }
