@@ -30,13 +30,15 @@ body {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    height: 50vh;
+    width: 100%;
+    height: 60vh;
     font-family: "Big Shoulders Inline", sans-serif;
     color: white;
+    overflow: hidden;
 }
 #header-landing img{
     position:absolute;
-    transform: scale(4) translateY(-30%);
+    transform: scale(2) translateY(-25%);
 
 
 }
@@ -75,12 +77,23 @@ body {
     z-index: 2;
 }
 #main-landing p {
-    font-family: "Big Shoulders Inline", sans-serif;
+    font-family: "Big Shoulders Inline", sans-serif !important;
     color: #EA5916;
+}
+#dropdown-container{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+}
+#dropdown-menu{
+    display: flex;
+    justify-content: center;
 }
 #table-of-contents{
     display: flex;
     z-index: 2;
+    flex-direction: column;
 }
 #dropdown-icon{
     position: relative;
@@ -101,13 +114,39 @@ body {
     transform: rotate(-90deg);
 
 }
-nav{
-  /* display: none; */
-  flex-direction: column;  
-} 
-#table-of-contents:hover + nav{
-    display: flex;
+#dropdown-toggle{
+    display:none
 }
+#landing-nav{
+  position: absolute;
+  display: flex;
+  flex-direction: column;  
+  top: -100%;
+  left: 0;
+  right: 0;
+  border: black 2px solid;
+  padding: 10px 10px;
+  transition: top 0.4s ease;
+  border-radius: 10px;
+} 
+#landing-nav a {
+    /* border: black 2px solid; */
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 10px
+}
+#landing-nav a:hover{
+background-color: #DBB71E;
+}
+#landing-nav a:nth-child(2) {
+    margin: 10px 0;
+}
+/* #table-of-contents:hover nav{
+   top: 30px;
+} */
+ #dropdown-toggle:checked ~ #dropdown-container nav{
+    top: 30px;
+ }
 /* #main-landing section{
     display: flex;
     flex-direction: column;
