@@ -139,6 +139,7 @@ body {
   padding: 10px 10px;
   transition: top 0.4s ease;
   border-radius: 10px;
+  font-family: "Big Shoulders Inline", sans-serif;
 } 
 #landing-nav a {
     /* border: black 2px solid; */
