@@ -14,7 +14,7 @@ article >p {
   padding-left: 1.5rem;
 }
 
- p {
+ article > p {
   text-align: justify;
 }
 
@@ -58,13 +58,13 @@ header{
 #article-author-top{
     height: 90px;
     width: 70%;
-    border-bottom: 2px black solid;
+    border-bottom: 10px black solid;
 }
 
 #nav-links{
     margin-left: 10vw;
-    border-left: 2px black solid;
-    border-right:2px black solid;
+    border-left: 10px black solid;
+    border-right:10px black solid;
     height: 100%;
     width: auto;
     display: flex;
@@ -73,8 +73,8 @@ header{
 }
 #main-chapter-1{
     margin-left: 10vw; 
-    border-left: 2px black solid;
-    border-right:2px black solid;
+    border-left: 10px black solid;
+    border-right:10px black solid;
     width: calc(70% - 10vw);
 }
 #article-top{
@@ -85,7 +85,7 @@ header{
 }
 #article-bottom{
     margin-left: 10vw; 
-    border-left: 2px black solid;
+    border-left: 10px black solid;
 
 }
 .width-40{
@@ -115,7 +115,10 @@ width: 100%;
     margin-bottom: 20px;
     font-family: "Major Mono Display";
     color: #3A65FF;
-    /* line-height: 1; */
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 1.4;
+   
 
 }
 .article-1-links{
@@ -138,7 +141,12 @@ article blockquote{
     margin-bottom: 20px;
     font-family: "Major Mono Display";
     color: #DBB71E;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 1.4;
 }
+
+
 
 /* .splash {
   position: fixed;
