@@ -73,6 +73,7 @@ article p{
     width: 90%;
     background-color: #fff;
     margin: 0 auto;
+    overflow: hidden;
 }
 #side-text{
     width: 15%;
