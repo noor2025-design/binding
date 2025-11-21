@@ -57,6 +57,7 @@ body {
     height: auto;
     aspect-ratio: 1;
     display: block;
+    min-width: 1024px;
 }
 #header-landing-desktop img, #header-landing-mobile img{
     position:relative;
@@ -95,6 +96,7 @@ body {
      letter-spacing: 0.03em;
      display: flex;
      flex-direction: column;
+     text-align: center;
     
     
 }
@@ -324,6 +326,7 @@ footer {
     #landing-subtitle{
      white-space: nowrap;
     position: absolute;
+    text-align: start;
     
 }
 }
