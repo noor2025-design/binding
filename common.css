@@ -25,10 +25,9 @@ body {
     padding: 0 1rem;
 } */
 
-#header-landing {
-    display: flex;
+#header-landing-desktop {
+    display: none;
     justify-content: flex-start;
-    align-items: center;
     position: relative;
     width: 100%;
     height: 60vh;
@@ -36,6 +35,17 @@ body {
     color: white;
     overflow: visible;
    
+}
+#header-landing-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    font-family: "Big Shoulders Inline", sans-serif;
+    color: white;
+    overflow: hidden;
 }
 .image{
     position:absolute;
@@ -48,7 +58,7 @@ body {
     aspect-ratio: 1;
     display: block;
 }
-#header-landing img{
+#header-landing-desktop img, #header-landing-mobile img{
     position:relative;
     /* transform: scale(2) translateY(-25%); */
     width: 100%;
@@ -61,7 +71,7 @@ body {
 #landing-title {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     font-size: 10rem;
     font-weight: 800;
     text-align: center;
@@ -73,20 +83,19 @@ body {
      z-index: 2;
     font-family: "Big Shoulders Inline", sans-serif;
     text-align: left;
-    margin-left: 14rem;
     position:relative
     
 }
 #landing-subtitle{
      font-size: 2rem;
-     position: absolute;
+     position: static;
      top: 100px;
      right: 40px;
      width: 250px;
      letter-spacing: 0.03em;
      display: flex;
      flex-direction: column;
-     white-space: nowrap;
+    
     
 }
 #subtitle-naming{
@@ -291,10 +300,30 @@ footer {
     margin-top: 4rem;
 }
 @media screen and (min-width: 768px) {
- #header-landing img{
+ #header-landing-desktop img{
     /* transform: scale(2) translateY(-30%); */
 
 
 }
    
+}
+@media screen and (min-width: 1024px) {
+    #header-landing-mobile{
+        display: none;
+
+
+    }
+    #header-landing-desktop{
+        display: flex;
+    }
+   
+    #landing-title{
+        align-items:stretch;
+        margin-left: 10vw;
+    }
+    #landing-subtitle{
+     white-space: nowrap;
+    position: absolute;
+    
+}
 }
