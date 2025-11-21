@@ -80,10 +80,13 @@ body {
 #landing-subtitle{
      font-size: 2rem;
      position: absolute;
-     top: 0;
-     right: 0;
+     top: 100px;
+     right: 40px;
      width: 250px;
      letter-spacing: 0.03em;
+     display: flex;
+     flex-direction: column;
+     white-space: nowrap;
     
 }
 #subtitle-naming{
@@ -122,7 +125,7 @@ body {
 #dropdown-container{
     position: relative;
     width: 200px;
-    /* height: 300px; */
+    height: 300px;
     overflow: hidden;
 }
 #dropdown-menu{
@@ -133,10 +136,10 @@ body {
     display: flex;
     z-index: 2;
     flex-direction: column;
-    margin-left: 15rem;
+    margin-left: 10rem;
     font-family: "Big Shoulders Inline";
     font-size: 4rem;
-    color: #DBB71E;
+    color: #3A65FF;
 }
 #dropdown-icon{
     position: relative;
@@ -177,7 +180,8 @@ body {
     /* border: black 2px solid; */
     background-color: rgba(58,101,255,0.6);
     padding: 20px;
-    border-radius: 10px
+    border-radius: 10px;
+    font-size: 1rem;
 }
 #landing-nav a:hover{
 background-color: #DBB71E;
