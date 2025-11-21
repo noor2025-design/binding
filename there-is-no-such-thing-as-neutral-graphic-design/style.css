@@ -58,6 +58,7 @@ flex-direction: column;
     width: 100%;
     height: 5px;
     background-color: #DBB71E;
+    display: none;
 }
 #header-subheading{
     width: 50%;
@@ -119,21 +120,36 @@ flex-direction: column;
     display:flex;
     flex-direction:column;
     align-items: center;
+    min-height: 50vh;
+    margin: 10vh 0;
+    font-family: "Big Shoulders Stencil";
+    font-size: 2rem;
  }
  .small-circle{
     border: white 2px solid;
-    padding: 30px;
+    /* padding: 6rem; */
     border-radius: 50%;
+    width: 300px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
  }
   .large-circle{
     border: white 2px solid;
-    padding: 60px;
+    padding: 10rem;
     border-radius: 50%;
     margin: 15px 0; 
+    width: 500px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
  }
  #header-svg{
     width: 100%;
     height: 100%;
+    display: none;
  }
  #blockquote-svg{
     width: 100%;
@@ -164,6 +180,39 @@ flex-direction: column;
     position: relative;
     width: 100%;
     overflow: hidden;
+    min-height: 300px;
+ }
+ #blockquote-vertical-line{
+    width: 5px;
+    height: 10vh;
+    background-color:white;
+    margin: 5vh auto;
+ }
+#zigzag-svg{
+    width: 100%;
+    height: 100%;
+ }
+ #zigzag-container{
+     height:60vh !important;
+     width: 100%;
+     position:relative
+ }
+
+ #zigzag-top-svg-container{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+
+ }
+ #zigzag-bottom-svg-container{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+   
  }
  @media screen and (min-width:768px) {
      #header-subheading{
@@ -181,9 +230,30 @@ flex-direction: column;
     width:60%;
     margin-left: auto;
  }
-  #blockquote-svg{
+ #blockquote-svg-container{
     display:block;
     
   }
-
+  #circle-word{
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+  }
+  #expose{
+    margin-right: 50px;
+    justify-content: flex-start;
+    padding-left: 15px;
+  }
+  #power{
+    margin-left: 50px;
+    justify-content: flex-end;
+    padding-right: 15px;
+  }
+#hidden{
+    position: absolute;
+}
+#nav-header-border, #blockquote-border{
+    display: block;
+}
+        
  }
