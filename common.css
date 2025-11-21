@@ -53,7 +53,7 @@ body {
     left: 50%;
     transform: translate(-50%,0%);
     bottom:0;
-    width: 100%;
+    width: 150vw;
     height: auto;
     aspect-ratio: 1;
     display: block;
@@ -73,7 +73,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 10rem;
+    font-size: 6rem;
     font-weight: 800;
     text-align: center;
     /* margin-bottom: 1.5rem; */
@@ -88,7 +88,7 @@ body {
     
 }
 #landing-subtitle{
-     font-size: 2rem;
+     font-size: 1.5rem;
      position: static;
      top: 100px;
      right: 40px;
@@ -305,7 +305,6 @@ footer {
  #header-landing-desktop img{
     /* transform: scale(2) translateY(-30%); */
 
-
 }
    
 }
@@ -322,11 +321,17 @@ footer {
     #landing-title{
         align-items:stretch;
         margin-left: 10vw;
+        font-size: 10rem;
     }
     #landing-subtitle{
-     white-space: nowrap;
+    white-space: nowrap;
     position: absolute;
     text-align: start;
+    font-size: 2rem;
     
 }
+.image{
+    width: 100%;
+}
+
 }
