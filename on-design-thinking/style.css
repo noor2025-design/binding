@@ -42,9 +42,11 @@ h1 {
 }
 
 
-article p{
+article > p{
     /* margin-bottom: 2em; */
     line-height: 1.6;
+    padding: 2rem;
+    font-size: 1.5rem;
 }
 
 #chapter-3-header{
@@ -67,6 +69,14 @@ article p{
     justify-content: space-between;
     margin: 40px auto 50px auto;
    
+}
+#chapter-3-links a{
+    border-top: #fff 5px solid;
+    border-bottom: #fff 5px solid;
+    border-left: #fff 5px solid;
+    border-right: #fff 5px solid;
+    padding: 1rem;
+
 }
 #article-background{
     display:flex;
@@ -97,6 +107,7 @@ article p{
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0 40px;
+    color:#3A65FF ;
 }
 .side-text-line{
     width: 100px;
@@ -120,9 +131,9 @@ article p{
     border: 8px #DBB71E solid;
     height: auto;
     font-family: "Allerta Stencil";
+    color: #3A65FF;
     
 }
 #original-article>p{
-    margin: 20px 0;
-    
+    margin: 20px 0; 
 }
