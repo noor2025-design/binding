@@ -106,11 +106,35 @@ body {
     background-color: var(--royal-blue);
     color: white;
     font-family: var(--font-primary);
+    font-size: 2rem;
 }
 
 #landing-nav ol li a {
     transform: rotate(-90deg);
 }
+
+#landing-nav a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+#landing-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #DBB71E;
+  transition: width 0.3s ease;
+}
+
+#landing-nav a:hover::after {
+  width: 100%;
+}
+
+
 
 /* header, section, footer {
     max-width: 800px;
