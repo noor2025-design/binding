@@ -148,12 +148,10 @@ flex-direction: column;
  } */
 
  #diagram-container{
-    width: 80%;
-    max-width: 600px;
-    height: 40vh;
+    width: 600px;
     display: flex;
     margin: 50px auto;
-    max-height: 350px;
+    height: 350px;
     justify-content: center;
  }
  #word-container-1,#word-container-3{
@@ -172,7 +170,7 @@ flex-direction: column;
     align-items: center;
     width: 30%;
  }
-  #line-container-2,#line-container-3{
+  #line-container-2{
     height: 100%;
     width: 100%;
  } 
@@ -181,8 +179,9 @@ flex-direction: column;
     left: 10px;
     width: calc(100% + 20px);
     height: 100%;
-    padding-bottom: 40px;
-    background: linear-gradient(to bottom right, black 3px, transparent 2px);
+    margin-bottom: 40px;
+    overflow: hidden;
+    /* background: linear-gradient(to bottom right, black 3px, transparent 2px); */
  }
  #diagram-line-1{
     width: 200%;
@@ -190,6 +189,28 @@ flex-direction: column;
     position: absolute;
     top: 0;
     left: 0;
+    transform: rotate(53deg);
+    transform-origin: top left;
+    background-color: white;
+ }
+ #line-container-3{
+    position: relative;
+    right: 10px;
+    width: calc(100% + 20px);
+    height: 100%;
+    margin-bottom: 40px;
+    overflow: hidden;
+    /* background: linear-gradient(to bottom right, black 3px, transparent 2px); */
+ }
+ #diagram-line-3{
+    width: 200%;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(-53deg);
+    transform-origin: top right;
+    background-color: white;
  }
  .diagram-word{
     border: 3px white solid;
@@ -236,7 +257,7 @@ flex-direction: column;
     overflow: hidden;
     min-height: 300px;
  }
- #blockquote-vertical-line{
+ .blockquote-vertical-line{
     width: 5px;
     height: 10vh;
     background-color:white;
@@ -249,7 +270,7 @@ flex-direction: column;
  #zigzag-container{
      height:60vh !important;
      width: 100%;
-     position:relative
+     position:relative;
  }
 
  #zigzag-top-svg-container{
