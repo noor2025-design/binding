@@ -30,7 +30,7 @@ body {
 
 #main-landing {
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
 }
@@ -40,15 +40,16 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
+    flex-direction: column;
 
 }
 
 #vertical-lines {
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 50%;
     display: flex;
     flex: 1 2 70%;
-    background-image: repeating-linear-gradient(to right,
+    background-image: repeating-linear-gradient(to bottom,
             var(--royal-blue),
             var(--royal-blue) 5px,
             transparent 5px,
@@ -56,8 +57,8 @@ body {
 }
 
 #intro-text-container {
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 50%;
     display: flex;
     flex: 1 1 70%;
     justify-content: center;
@@ -65,8 +66,6 @@ body {
     color: var(--mustard-yellow);
     font-family: var(--font-primary);
     font-size: 1.5rem;
-
-
 }
 
 #intro-text-container p {
@@ -75,12 +74,22 @@ body {
     max-width: 585px;
     position: relative;
     z-index: 3;
+    display: none;
+}
+#header-intro-text{
+    color: var(--mustard-yellow);
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    padding: 30px 0 0 0;
+    max-width: 204px;
+    box-sizing: border-box;
+    text-wrap: balance;
 }
 
 #landing-nav {
     /* width: 33%; */
     height: auto;
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,9 +99,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
-    width: 33vw;
-    max-width: 350px;
+    width: 100%;
+    max-height: 350px;
+    height: 33vh;
     overflow: hidden;
     flex-direction: column;
 
@@ -103,9 +112,9 @@ body {
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    width: 10vw;
-    max-width: 100px;
-    height: 100%;
+    height: 10vh;
+    /* max-width: 100px; */
+    width: 100%;
     background-color: var(--royal-blue);
     color: white;
     font-family: var(--font-primary);
@@ -169,7 +178,7 @@ body {
 } */
 #header-landing {
     position: absolute;
-    height: 50vh;
+    height: 45vh;
     width: 50vw;
     background-color: white;
     top: 50%;
@@ -178,15 +187,16 @@ body {
     z-index: 2;
     display: flex;
     align-items: center;
-    padding-left: 3rem;
+    justify-content: center;
     box-sizing: border-box;
+    flex-direction: column;
 
 }
 #landing-title{
     display: flex;
     flex-direction: column;
     font-family: var(--font-primary);
-    font-size: 6rem;
+    font-size: 4rem;
     color: var(--royal-blue);
     justify-content: center;
     line-height: 1.2;
@@ -194,7 +204,7 @@ body {
 #landing-subtitle{
     display: flex;
     flex-direction: column;
-    font-size: 2rem;
+    font-size: 1.75rem;
     color:var(--royal-blue) ;
 }
 footer {
@@ -202,7 +212,7 @@ footer {
     color: #DBB71E;
     font-size: 0.9 rem;
     border-top: 1px solid #eee;
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,7 +223,7 @@ footer {
     flex-direction: row;
     }
     #landing-nav {
-    /* width: auto;  */
+    width: auto; 
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -227,7 +237,63 @@ footer {
     height: 100%;
     width: 33vw;
     max-width: 350px;
-
+    flex-direction: row;
+    max-height: fit-content;
+}
+#landing-nav ol li {
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    max-width: 100px;
+    height: 100%;
+    font-size: 2rem;
+}
+#intro-section {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+#vertical-lines {
+    width: 50%;
+    height: 100%;
+    flex: 1 2 70%;
+    background-image: repeating-linear-gradient(to right,
+            var(--royal-blue),
+            var(--royal-blue) 5px,
+            transparent 5px,
+            transparent 10px);
+}
+#intro-text-container {
+    width: 50%;
+    height: 100%;
+    flex: 1 1 70%;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.5rem;
+}
+#intro-text-container p{
+    display: block;
+}
+#header-intro-text{
+    display: none;
+    font-size: 1.5rem;
+}
+#header-landing {
+    height: 50vh;
+    width: 50vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    padding-left: 3rem;
+    flex-direction: row;
+}
+#landing-title{
+    font-size: 6rem;
+    line-height: 1.2;
+}
+#landing-subtitle{
+    font-size: 2rem;
 }
 }
 
