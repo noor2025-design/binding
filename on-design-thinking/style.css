@@ -1,8 +1,8 @@
 body {
-    background-color: #DBB71E;
+    background-color: #3A65FF;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-family: "Inter",sans-serif;
+  
 }
 
 /* nav ol a {
@@ -18,7 +18,8 @@ nav ol a {
 } */
 h1 {
     margin-block-end: 1rem;
-    font-family: "Allerta Stencil";
+    font-family: "Big Shoulders Stencil";
+    font-size: 6rem;
 }
 
 .bottom-nav {
@@ -61,7 +62,8 @@ article > p{
 #chapter-3-header h1{
     display: flex;
     flex-direction: column;
-    font-size: 3em;
+    font-size: 6rem;
+    color: white;
 }
 #chapter-3-links{
     width: clamp(300px,50vw,500px);
@@ -130,7 +132,7 @@ article > p{
     font-style: italic;
     border: 8px #DBB71E solid;
     height: auto;
-    font-family: "Allerta Stencil";
+    font-family: "Big Shoulders Stencil";
     color: #3A65FF;
     
 }

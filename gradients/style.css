@@ -1,8 +1,10 @@
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     /* padding: 0 2rem;
     max-width: 800px; */
     margin: 0;
+   background-color: #3A65FF;
+   color: white;
 }
 
 /* p {
@@ -44,7 +46,7 @@ h1{
   text-align: center; 
   padding: 3rem 0;
   font-size: 8rem;
-  font-family: "Major Mono Display";
+  font-family: "Big Shoulders Stencil";
   font-weight: 700;
   color:#DBB71E ;
 }
@@ -58,13 +60,13 @@ header{
 #article-author-top{
     height: 90px;
     width: 70%;
-    border-bottom: 10px black solid;
+    border-bottom: 10px white solid;
 }
 
 #nav-links{
     margin-left: 10vw;
-    border-left: 10px black solid;
-    border-right:10px black solid;
+    border-left: 10px white solid;
+    border-right:10px white solid;
     height: 100%;
     width: auto;
     display: flex;
@@ -74,16 +76,16 @@ header{
 }
 
 #nav-links a {
-    border-top: black 5px solid;
-    border-bottom: black 5px solid;
-    border-left: black 5px solid;
-    border-right: black 5px solid;
+    border-top: white 5px solid;
+    border-bottom: white 5px solid;
+    border-left: white 5px solid;
+    border-right: white 5px solid;
     padding: 0.5rem;
 }
 #main-chapter-1{
     margin-left: 10vw; 
-    border-left: 10px black solid;
-    border-right:10px black solid;
+    border-left: 10px white solid;
+    border-right:10px white solid;
     width: calc(70% - 10vw);
 }
 #article-top{
@@ -94,7 +96,7 @@ header{
 }
 #article-bottom{
     margin-left: 10vw; 
-    border-left: 10px black solid;
+    border-left: 10px white solid;
 
 }
 .width-40{
@@ -122,8 +124,8 @@ width: 100%;
     padding-top: 40px; */
     width: 100%;
     margin-bottom: 20px;
-    font-family: "Major Mono Display";
-    color: #3A65FF;
+    font-family: "Big Shoulders Stencil";
+    color: #fff;
     text-align: center;
     letter-spacing: 0;
     line-height: 1.4;
@@ -148,7 +150,7 @@ article blockquote{
 #second-blockquote{
     width: 60%;
     margin-bottom: 20px;
-    font-family: "Major Mono Display";
+    font-family: "Big Shoulders Stencil";
     color: #DBB71E;
     text-align: center;
     letter-spacing: 0;
@@ -190,18 +192,13 @@ article blockquote{
 
   background: radial-gradient(
     circle at 50% 100%,
-    rgba(58, 101, 255, 1),   /* mint */
-    rgba(255, 255, 255, 0.25),
-    rgba(219, 183, 30, 0.35)    /* gold */
+    /* rgba(255, 255, 255, 1),      white core */
+    rgba(255, 255, 255, 0.25),   /* soft white fade */
+    rgba(219, 183, 30, 0.35)     /* gold glow */
   );
 
   filter: blur(40px);
   animation: splashMove 14s ease-in-out infinite alternate;
-}
-
-@keyframes splashMove {
-  0%   { transform: translateY(0) scale(1); }
-  100% { transform: translateY(20px) scale(1.15); }
 }
 
   
