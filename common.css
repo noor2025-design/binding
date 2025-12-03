@@ -76,12 +76,13 @@ body {
     z-index: 3;
     display: none;
 }
-#header-intro-text-container{
+
+#header-intro-text-container {
     display: flex;
     justify-content: center;
     width: 145px;
 }
-    
+
 
 
 #header-intro-text {
@@ -308,10 +309,15 @@ body {
         line-height: 1.2;
     }
 
+    #header-intro-text-container {
+        width: 166px;
+    }
+
     #landing-subtitle {
         font-size: 1.5rem;
     }
-#landing-nav ol li {
+
+    #landing-nav ol li {
         justify-content: center;
         align-items: center;
         width: 10vw;
@@ -319,6 +325,7 @@ body {
         height: 100%;
         font-size: 2rem;
     }
+
     /* #dropdown-container{
     height: 50vh;
 } */
