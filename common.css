@@ -79,7 +79,7 @@ body {
 #header-intro-text{
     color: var(--mustard-yellow);
     font-family: var(--font-primary);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 30px 0 0 0;
     max-width: 204px;
     box-sizing: border-box;
@@ -118,7 +118,7 @@ body {
     background-color: var(--royal-blue);
     color: white;
     font-family: var(--font-primary);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #landing-nav ol li a {
@@ -147,39 +147,10 @@ body {
 }
 
 
-
-/* header, section, footer {
-    max-width: 800px;
-    margin: 4rem auto;
-    padding: 0 1rem;
-} */
-
-/* #header-landing-desktop {
-    display: none;
-    justify-content: flex-start;
-    position: relative;
-    width: 100%;
-    height: 60vh;
-    font-family: "Big Shoulders Inline", sans-serif;
-    color: white;
-    overflow: visible;
-   
-} */
-/* #header-landing-mobile {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    height: 60vh;
-    font-family: "Big Shoulders Inline", sans-serif;
-    color: white;
-    overflow: hidden;
-} */
 #header-landing {
     position: absolute;
     height: 45vh;
-    width: 50vw;
+    width: 60vw;
     background-color: white;
     top: 50%;
     left: 50%;
@@ -190,13 +161,17 @@ body {
     justify-content: center;
     box-sizing: border-box;
     flex-direction: column;
+    padding: 0 50px;
 
+}
+#landing-title span{
+    white-space: nowrap;
 }
 #landing-title{
     display: flex;
     flex-direction: column;
     font-family: var(--font-primary);
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--royal-blue);
     justify-content: center;
     line-height: 1.2;
@@ -204,20 +179,82 @@ body {
 #landing-subtitle{
     display: flex;
     flex-direction: column;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color:var(--royal-blue) ;
 }
-footer {
+#colophon {
     text-align: center;
     color: #DBB71E;
     font-size: 0.9 rem;
-    border-top: 1px solid #eee;
+    /* border-top: 1px solid #eee; */
     height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-wrap: balance;
+}
+#colophon p:first-child{
+    margin-bottom: 10px;
 }
 
+#table-of-contents{
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    height: 40vh;
+}
+#dropdown-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dropdown-horizontal-line{
+    width: 50px;
+    height:10px;
+    background-color: #EA5916;
+}
+#dropdown-vertical-line{
+    width: 50px;
+    height: 10px;
+    background-color: #DBB71E;
+    position: absolute;
+    transform: rotate(-90deg);
+
+}
+
+#dropdown-toggle{
+    display:none
+}
+#article-nav{
+  position: absolute;
+  display: flex;
+  flex-direction: column;  
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  border: white 2px solid;
+  padding: 10px 10px;
+  transition: top 0.4s ease;
+} 
+#article-nav a {
+    /* border: black 2px solid; */
+    background-color: lightgrey;
+    padding: 20px;
+}
+#article-nav a:hover{
+background-color: #DBB71E;
+}
+/* #article-nav a:nth-child(2) {
+    margin: 10px 0;
+} */
+/* #table-of-contents:hover nav{
+   top: 30px;
+} */
+ #dropdown-toggle:checked ~ #dropdown-container nav{
+    bottom: 30px;
+ }
 @media screen and (min-width: 768px) {
     #main-landing{
     flex-direction: row;
@@ -295,10 +332,19 @@ footer {
 #landing-subtitle{
     font-size: 2rem;
 }
+#colophon {
+    font-size: 0.9 rem;
+    /* border-top: 1px solid #eee; */
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }
 
 @media screen and (min-width: 992px) {
     #intro-text-container {
         font-size: 2rem;
     }
+
 }

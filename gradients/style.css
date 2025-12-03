@@ -1,48 +1,60 @@
 body {
-    font-family: "Inter", sans-serif;
-    /* padding: 0 2rem;
+  font-family: "Inter", sans-serif;
+  /* padding: 0 2rem;
     max-width: 800px; */
-   margin: 0;
-   background-color: #3A65FF;
-   color: white;
+  margin: 0;
+  background-color: #3A65FF;
+  color: white;
+ overflow-x: hidden;
 }
 
-h1{
-  text-align: center; 
+h1 {
+  text-align: center;
   padding: 3rem 0;
   font-size: 8rem;
   font-family: "Big Shoulders Stencil";
   font-weight: 700;
-  color:#DBB71E ;
+  color: #DBB71E;
   text-transform: uppercase;
 }
 
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#circle-image{
+#circle-image {
   width: 50%;
   aspect-ratio: 1 / 1;
 }
 
 #main-article{
-    margin-top: 100px;
-    position: relative;
+  
+} 
+#heading-right-line {
+  height: 6vh;
 
 }
-#main-article article{
+
+#section-article {
+  /* margin-top: 100px; */
+  position: relative;
+
+
+}
+
+#section-article article {
   padding: 20px 10vw;
 }
 
-#main-article article p {
+#section-article article>p {
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
-#main-article::before{
+
+#section-article::before {
   content: "";
   position: absolute;
   height: 3px;
@@ -52,22 +64,49 @@ header{
   left: 10%;
 }
 
-
-#second-blockquote{
-    width: 60%;
-    margin-bottom: 20px;
-    font-family: "Big Shoulders Stencil";
-    color: #DBB71E;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 1.4;
-    font-size: 2rem;
+#first-blockquote {
+  margin: 30px 0;
+  padding: 40px;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  font-style: italic;
+  height: auto;
+  font-family: "Big Shoulders Stencil";
+  color: #FFF;
+  text-wrap: balance;
 }
 
+#second-blockquote {
+  /* width: 60%; */
+  margin-bottom: 20px;
+  font-family: "Big Shoulders Stencil";
+  color: #DBB71E;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 1.4;
+  font-size: 5rem;
+  text-wrap: balance;
+  padding: 40px;
+}
+
+.blockquote-vertical-line {
+  width: 5px;
+  height: 10vh;
+  background-color: white;
+  margin: 5vh auto;
+}
+
+.horizontal-line {
+  height: 5px;
+  width: 50vw;
+  background-color: white;
+  margin: 100px auto 60px auto;
+}
 
 .bottom-nav {
   width: 100%;
-  background: transparent; 
+  background: transparent;
   text-align: center;
   padding: 1rem 2rem;
   border-top: none;
@@ -76,14 +115,75 @@ header{
 .bottom-nav a {
   margin: 0 1rem;
   text-decoration: none;
-  color: black;             
+  color: black;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .bottom-nav a:hover {
-  color: #999;             
+  color: #999;
 }
 
 
-  
+
+#dropdown-toggle{
+    display:none
+}
+#article-nav{
+  position: absolute;
+  display: flex;
+  flex-direction: column;  
+  top: -100%;
+  left: 0;
+  right: 0;
+  border: black 2px solid;
+  padding: 10px 10px;
+  transition: top 0.4s ease;
+  border-radius: 10px;
+} 
+#article-nav a {
+    /* border: black 2px solid; */
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 10px
+}
+#article-nav a:hover{
+background-color: #DBB71E;
+}
+#article-nav a:nth-child(2) {
+    margin: 10px 0;
+}
+/* #table-of-contents:hover nav{
+   top: 30px;
+} */
+ #dropdown-toggle:checked ~ #dropdown-container nav{
+    top: 30px;
+ }
+@media screen and (min-width:768px) {
+  #main-article {
+    border-right: 3px white solid;
+    width: calc(100vw - 200px);
+
+  }
+
+  #section-article {
+    /* margin-top: 100px; */
+    border-left: 3px white solid;
+    margin-left: 80px
+  }
+#section-article::before {
+  height: 3px;
+  width: calc(100vw - 80px);
+  top: 0;
+  left: 10%;
+}
+#section-article::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: calc(100vw - 80px);
+  bottom: 0;
+  left: 10%;
+  background-color: #FFF;
+}
+}
