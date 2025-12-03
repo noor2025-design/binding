@@ -145,3 +145,39 @@ article > p{
 #original-article>p{
     margin: 20px 0; 
 }
+
+#scrolling-colors{
+    width: 100%;
+    height: 30px;
+    overflow:hidden;
+}
+
+#colors{
+    display: flex;
+    width: 200%;
+    animation: scroll 6s linear infinite;
+}
+#paused:checked + #scrolling-colors #colors{
+    animation-play-state: paused;
+}
+.bar{
+    width: calc(100% / 3);
+    height: 30px;
+}
+.color-1{
+    background-color: var(--mustard-yellow);
+}
+.color-2{
+    background-color: white;
+}
+.color-3{
+    background-color: black;
+}
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+      transform: translateX(-50%);  
+    }
+}

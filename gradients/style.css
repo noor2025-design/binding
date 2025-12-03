@@ -47,6 +47,7 @@ header {
 
 #section-article article {
   padding: 20px 10vw;
+  overflow: hidden;
 }
 
 #section-article article>p {
@@ -75,6 +76,7 @@ header {
   font-family: "Big Shoulders Stencil";
   color: #FFF;
   text-wrap: balance;
+  position: relative;
 }
 
 #second-blockquote {
@@ -125,40 +127,6 @@ header {
 }
 
 
-
-#dropdown-toggle{
-    display:none
-}
-#article-nav{
-  position: absolute;
-  display: flex;
-  flex-direction: column;  
-  top: -100%;
-  left: 0;
-  right: 0;
-  border: black 2px solid;
-  padding: 10px 10px;
-  transition: top 0.4s ease;
-  border-radius: 10px;
-} 
-#article-nav a {
-    /* border: black 2px solid; */
-    background-color: lightgrey;
-    padding: 20px;
-    border-radius: 10px
-}
-#article-nav a:hover{
-background-color: #DBB71E;
-}
-#article-nav a:nth-child(2) {
-    margin: 10px 0;
-}
-/* #table-of-contents:hover nav{
-   top: 30px;
-} */
- #dropdown-toggle:checked ~ #dropdown-container nav{
-    top: 30px;
- }
 @media screen and (min-width:768px) {
   #main-article {
     border-right: 3px white solid;
@@ -185,5 +153,18 @@ background-color: #DBB71E;
   bottom: 0;
   left: 10%;
   background-color: #FFF;
+}
+#blockquote-anchor-line{
+  position: absolute;
+  height: 3px;
+  width: 500px;
+  background-color: #FFF;
+  right: 0;
+  top: 50%;
+  transform: translateX(55%);
+
+}
+.horizontal-line{
+  display: none;
 }
 }
