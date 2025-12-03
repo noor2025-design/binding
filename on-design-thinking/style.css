@@ -105,7 +105,7 @@ article > p{
 #main-side-text{
     white-space: nowrap;
     font-size: 72px;
-    color: black;
+    color: white;
     margin: 0 40px;
 }
 #sub-side-text{
@@ -115,12 +115,12 @@ article > p{
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0 40px;
-    color:#3A65FF ;
+    color: white ;
 }
 .side-text-line{
     width: 100px;
     height: 4px;
-    background-color: black;
+    background-color: white;
     margin: 0 40px;
     flex-shrink: 0;
 }
