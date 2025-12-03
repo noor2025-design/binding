@@ -307,6 +307,7 @@ flex-direction: column;
     overflow: hidden;
     z-index: 1;
     margin-bottom: 50px;
+    display: block;
 }
 /* #header-subheading{
     width: 50%;

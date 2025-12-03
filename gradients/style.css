@@ -5,13 +5,13 @@ body {
   margin: 0;
   background-color: #3A65FF;
   color: white;
- overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 h1 {
   text-align: center;
   padding: 3rem 0;
-  font-size: 8rem;
+  font-size: 5rem;
   font-family: "Big Shoulders Stencil";
   font-weight: 700;
   color: #DBB71E;
@@ -30,9 +30,8 @@ header {
   aspect-ratio: 1 / 1;
 }
 
-#main-article{
-  
-} 
+#main-article {}
+
 #heading-right-line {
   height: 6vh;
 
@@ -52,7 +51,7 @@ header {
 
 #section-article article>p {
   margin-bottom: 2rem;
-  font-size: 2.5rem;
+  font-size: 1.2rem;
 }
 
 #section-article::before {
@@ -69,7 +68,7 @@ header {
   margin: 30px 0;
   padding: 40px;
   text-align: center;
-  font-size: 5rem;
+  font-size: 2rem;
   font-weight: bold;
   font-style: italic;
   height: auto;
@@ -87,7 +86,7 @@ header {
   text-align: center;
   letter-spacing: 0;
   line-height: 1.4;
-  font-size: 5rem;
+  font-size: 2rem;
   text-wrap: balance;
   padding: 40px;
 }
@@ -127,8 +126,50 @@ header {
 }
 
 @media screen and (min-width: 480px) {
-  
+#section-article article>p {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
 }
+
+  h1 {
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 8rem;
+    font-family: "Big Shoulders Stencil";
+    font-weight: 700;
+    color: #DBB71E;
+    text-transform: uppercase;
+  }
+  #first-blockquote {
+  margin: 30px 0;
+  padding: 40px;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  font-style: italic;
+  height: auto;
+  font-family: "Big Shoulders Stencil";
+  color: #FFF;
+  text-wrap: balance;
+  position: relative;
+}
+
+#second-blockquote {
+  /* width: 60%; */
+  margin-bottom: 20px;
+  font-family: "Big Shoulders Stencil";
+  color: #DBB71E;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 1.4;
+  font-size: 5rem;
+  text-wrap: balance;
+  padding: 40px;
+}
+
+}
+
+
 
 @media screen and (min-width:768px) {
   #main-article {
@@ -142,32 +183,36 @@ header {
     border-left: 3px white solid;
     margin-left: 80px
   }
-#section-article::before {
-  height: 3px;
-  width: calc(100vw - 80px);
-  top: 0;
-  left: 10%;
-}
-#section-article::after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  width: calc(100vw - 80px);
-  bottom: 0;
-  left: 10%;
-  background-color: #FFF;
-}
-#blockquote-anchor-line{
-  position: absolute;
-  height: 3px;
-  width: 500px;
-  background-color: #FFF;
-  right: 0;
-  top: 50%;
-  transform: translateX(55%);
 
-}
-.horizontal-line{
-  display: none;
-}
+  #section-article::before {
+    height: 3px;
+    width: calc(100vw - 80px);
+    top: 0;
+    left: 10%;
+  }
+
+  #section-article::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: calc(100vw - 80px);
+    bottom: 0;
+    left: 10%;
+    background-color: #FFF;
+  }
+
+  #blockquote-anchor-line {
+    position: absolute;
+    height: 3px;
+    width: 500px;
+    background-color: #FFF;
+    right: 0;
+    top: 50%;
+    transform: translateX(55%);
+
+  }
+
+  .horizontal-line {
+    display: none;
+  }
 }
