@@ -174,16 +174,16 @@ body {
     display: flex;
     flex-direction: column;
     font-family: var(--font-primary);
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--royal-blue);
     justify-content: center;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 #landing-subtitle {
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--royal-blue);
 }
 
@@ -295,6 +295,14 @@ body {
 }
 
 @media screen and (min-width: 480px) {
+    #landing-title {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    #landing-subtitle {
+        font-size: 1.5rem;
+    }
 
     /* #dropdown-container{
     height: 50vh;

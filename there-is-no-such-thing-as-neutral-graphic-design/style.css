@@ -298,6 +298,9 @@ flex-direction: column;
     height: 50%;
    
  }
+ @media screen and (min-width: 480px) {
+   
+ }
  @media screen and (min-width:768px) {
      #header-subheading{
     
