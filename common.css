@@ -318,11 +318,6 @@ body {
     }
 
     #landing-nav ol li {
-        justify-content: center;
-        align-items: center;
-        width: 10vw;
-        max-width: 100px;
-        height: 100%;
         font-size: 2rem;
     }
 
