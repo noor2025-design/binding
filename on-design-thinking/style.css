@@ -2,20 +2,9 @@ body {
     background-color: #3A65FF;
     color: black;
     font-family: "Inter", sans-serif;
-  
+
 }
 
-/* nav ol a {
-    display: flex;
-}
-
-nav ol a {
-    color: hotpink;
-
-    &:hover {
-        text-decoration: underline;
-    }
-} */
 h1 {
     margin-block-end: 1rem;
     font-family: "Big Shoulders Stencil";
@@ -23,66 +12,51 @@ h1 {
 }
 
 .bottom-nav {
-  width: 100%;
-  background: transparent; 
-  text-align: center;
-  padding: 1rem 2rem;
-  border-top: none;
+    width: 100%;
+    background: transparent;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-top: none;
 }
 
 .bottom-nav a {
-  margin: 0 1rem;
-  text-decoration: none;
-  color: #fff;             
-  font-weight: 500;
-  transition: color 0.3s ease;
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .bottom-nav a:hover {
-  color: #999;             
+    color: #999;
 }
 
 
-article > p{
-    /* margin-bottom: 2em; */
-    line-height: 1.6;
-    padding: 2rem;
-    font-size: 2rem;
-    color: #FFF;
-}
-
-#chapter-3-header{
+#chapter-3-header {
     border: #fff 5px solid;
     padding: 50px 30px;
-    margin: 50px auto 10px auto;
-    width: clamp(300px,50vw,500px);
+    margin: 50px auto;
+    width: 85vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
 }
-#chapter-3-header h1{
+
+#chapter-3-header h1 {
     display: flex;
     flex-direction: column;
-    font-size: 6rem;
+    font-size: 3.5rem;
     color: white;
 }
-#chapter-3-links{
-    width: clamp(300px,50vw,500px);
-    display: flex;
-    justify-content: space-between;
-    margin: 40px auto 50px auto;
-   
-}
-#chapter-3-links a{
-    border-top: #fff 5px solid;
-    border-bottom: #fff 5px solid;
-    border-left: #fff 5px solid;
-    border-right: #fff 5px solid;
-    padding: 1rem;
 
+#chapter-3-header h1 span {
+    white-space: nowrap;
 }
-#article-background{
-    display:flex;
+
+#article-background {
+    display: flex;
     width: 90%;
     /* background-color: #fff; */
     margin: 0 auto;
@@ -93,7 +67,8 @@ article > p{
     border-right: #fff 5px solid;
 
 }
-#side-text{
+
+#side-text {
     width: 15%;
     /* height: 50vh; */
     display: flex;
@@ -102,82 +77,156 @@ article > p{
     transform: rotate(-90deg);
     color: #DBB71E;
 }
-#main-side-text{
+
+#main-side-text {
     white-space: nowrap;
     font-size: 72px;
+    font-weight: 700;
     color: white;
+    text-shadow:
+        5px 15px 0px #DBB71E,
+        10px 30px 0px #dbb81e97;
+    text-transform: uppercase;
     margin: 0 40px;
 }
-#sub-side-text{
+
+#sub-side-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0 40px;
-    color: white ;
+    color: white;
 }
-.side-text-line{
+
+.side-text-line {
     width: 100px;
     height: 4px;
     background-color: white;
     margin: 0 40px;
     flex-shrink: 0;
 }
-#original-article{
-    padding-top: 5rem;
-    padding-right: 10rem;
-    padding-bottom: 5rem;
+
+#original-article {
+    padding-top: 2rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
 }
-#original-article blockquote{
+
+#original-article blockquote {
     margin: 30px 0;
     padding: 40px;
     text-align: center;
-    font-size: clamp(22px,5vw,36px);
+    font-size: clamp(22px, 5vw, 36px);
     font-weight: bold;
     font-style: italic;
     border: 8px #DBB71E solid;
     height: auto;
     font-family: "Big Shoulders Stencil";
     color: #FFF;
-    
-}
-#original-article>p{
-    margin: 20px 0; 
+
 }
 
-#scrolling-colors{
-    width: 100%;
+#original-article>p {
+    margin: 20px 0;
+    line-height: 1.4;
+    padding: .5rem;
+    font-size: 1.2rem;
+    color: #FFF;
+    /* text-wrap: balance; */
+}
+
+#scrolling-colors {
+    width: 90%;
     height: 30px;
-    overflow:hidden;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
-#colors{
+#colors {
     display: flex;
     width: 200%;
-    animation: scroll 6s linear infinite;
+    animation: scroll 10s linear infinite;
 }
-#paused:checked + #scrolling-colors #colors{
+
+#paused:checked+#scrolling-colors #colors {
     animation-play-state: paused;
 }
-.bar{
+
+.bar {
     width: calc(100% / 3);
     height: 30px;
 }
-.color-1{
+
+.color-1 {
     background-color: var(--mustard-yellow);
 }
-.color-2{
+
+.color-2 {
     background-color: white;
 }
-.color-3{
+
+.color-3 {
     background-color: black;
 }
-@keyframes scroll{
-    from{
+
+@keyframes scroll {
+    from {
         transform: translateX(0);
     }
-    to{
-      transform: translateX(-50%);  
+
+    to {
+        transform: translateX(-50%);
     }
 }
+
+@media screen and (min-width:480px) {
+    #chapter-3-header h1 {
+        font-size: 4rem;
+    }
+    
+    #original-article {
+    padding-top: 5rem;
+    padding-right: 10rem;
+    padding-bottom: 5rem;
+}
+    #chapter-3-header {
+        padding: 50px 30px;
+        width: 70vw;
+
+
+    }
+    #original-article>p{
+    margin: 20px 0; 
+    line-height: 1.6;
+    padding: 2rem;
+    font-size: 2rem;
+
+}
+}
+
+@media screen and (min-width:768px) {
+    #chapter-3-header h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #chapter-3-header {
+        padding: 50px 30px;
+        width: 50vw;
+        max-width: 700px;
+
+    }
+
+    #chapter-3-header h1 {
+        font-size: 6rem;
+    }
+}
+
+/* @media screen and (min-width:1200px){
+    #chapter-3-header h1{
+    font-size: 6rem;
+    }
+} */
