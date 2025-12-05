@@ -4,6 +4,7 @@
     --royal-blue: #3A65FF;
     --mustard-yellow: #DBB71E;
     --font-primary: "Big Shoulders Stencil", sans-serif;
+  
 }
 
 /* @media (prefers-color-scheme:dark) {
@@ -199,7 +200,7 @@ body {
 #colophon {
     text-align: center;
     color: #DBB71E;
-    font-size: 0.9 rem;
+    font-size: 0.8rem;
     /* border-top: 1px solid #eee; */
     height: 15vh;
     display: flex;
@@ -207,6 +208,8 @@ body {
     align-items: center;
     flex-direction: column;
     text-wrap: balance;
+    color: var(--royal-blue);
+    margin-top: 3rem;
 }
 
 #colophon p:first-child {
@@ -318,7 +321,7 @@ body {
     }
 
     #landing-nav ol li {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     /* #dropdown-container{
@@ -420,7 +423,7 @@ body {
     }
 
     #colophon {
-        font-size: 0.9 rem;
+        font-size: 0.9rem;
         /* border-top: 1px solid #eee; */
         height: 15vh;
         display: flex;
