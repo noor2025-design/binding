@@ -171,6 +171,23 @@ h1 {
     background-color: black;
 }
 
+.article-source {
+  margin-top: 2rem; /* gives breathing room above */
+  font-size: clamp(0.85rem, 1.3vw, 0.95rem); /* responsive text */
+  opacity: 0.9; /* slightly subtle */
+}
+
+.article-source a {
+  color: var(--mustard-yellow); /* your theme color */
+  text-decoration: underline; /* clear it's a link */
+  transition: opacity 0.3s ease; /* smooth hover */
+}
+
+.article-source a:hover {
+  opacity: 1; /* brighter when hovered */
+}
+
+
 @keyframes scroll {
     from {
         transform: translateX(0);

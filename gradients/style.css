@@ -125,6 +125,23 @@ header {
   color: #999;
 }
 
+.article-source {
+  margin-top: 2rem;
+  font-size: clamp(0.85rem, 1.3vw, 0.95rem);
+  opacity: 0.9;
+}
+
+.article-source a {
+  text-decoration: underline;
+  color: var(--mustard-yellow);
+  transition: opacity 0.3s ease;
+}
+
+.article-source a:hover {
+  opacity: 1;
+}
+
+
 @media screen and (min-width: 480px) {
 #section-article article>p {
   margin-bottom: 2rem;

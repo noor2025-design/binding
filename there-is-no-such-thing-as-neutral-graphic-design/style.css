@@ -298,6 +298,18 @@ flex-direction: column;
     height: 50%;
    
  }
+
+ .article-source {
+  margin-top: 2rem;
+  font-size: clamp(0.85rem, 1.3vw, 0.95rem);
+  opacity: 0.9;
+}
+
+.article-source a {
+  text-decoration: underline;
+  color: var(--mustard-yellow);
+}
+
  @media screen and (min-width: 480px) {
    #nav-header-wrapper{
     position: relative;
