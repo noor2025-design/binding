@@ -219,7 +219,7 @@ body {
 #dropdown-container {
     position: relative;
     width: 50vw;
-    height: 50vh;
+    height: 60vh;
     overflow: hidden;
 }
 
@@ -232,7 +232,7 @@ body {
     display: flex;
     z-index: 2;
     justify-content: center;
-    /* height: 40vh; */
+    height: 60vh;
     align-items: center;
     margin-bottom: 100px;
     flex-direction: column;
@@ -324,9 +324,9 @@ body {
         font-size: 1.7rem;
     }
 
-    /* #dropdown-container{
-    height: 50vh;
-} */
+    #dropdown-container{
+    height: 60vh;
+} 
     #article-nav a {
         /* border: black 2px solid; */
         padding: 20px;
