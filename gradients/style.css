@@ -1,7 +1,5 @@
 body {
   font-family: "Inter", sans-serif;
-  /* padding: 0 2rem;
-    max-width: 800px; */
   margin: 0;
   background-color: #3A65FF;
   color: white;
@@ -38,7 +36,6 @@ header {
 }
 
 #section-article {
-  /* margin-top: 100px; */
   position: relative;
 
 
@@ -79,7 +76,6 @@ header {
 }
 
 #second-blockquote {
-  /* width: 60%; */
   margin-bottom: 20px;
   font-family: "Big Shoulders Stencil";
   color: #DBB71E;
@@ -172,7 +168,6 @@ header {
 }
 
 #second-blockquote {
-  /* width: 60%; */
   margin-bottom: 20px;
   font-family: "Big Shoulders Stencil";
   color: #DBB71E;
@@ -196,7 +191,6 @@ header {
   }
 
   #section-article {
-    /* margin-top: 100px; */
     border-left: 3px white solid;
     margin-left: 80px
   }

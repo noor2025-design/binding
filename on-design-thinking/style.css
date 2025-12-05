@@ -58,7 +58,6 @@ h1 {
 #article-background {
     display: flex;
     width: 90%;
-    /* background-color: #fff; */
     margin: 0 auto;
     overflow: hidden;
     border-top: #fff 5px solid;
@@ -70,7 +69,6 @@ h1 {
 
 #side-text {
     width: 15%;
-    /* height: 50vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,9 +81,6 @@ h1 {
     font-size: 25px;
     font-weight: 700;
     color: white;
-    /* text-shadow:
-        4px 10px 0px #DBB71E,
-        8px 10px 0px #dbb81e97; */
     text-transform: uppercase;
     margin: 0 40px;
 }
@@ -134,7 +129,6 @@ h1 {
     padding: .5rem;
     font-size: 1.2rem;
     color: #FFF;
-    /* text-wrap: balance; */
 }
 
 #scrolling-colors {
@@ -172,19 +166,19 @@ h1 {
 }
 
 .article-source {
-  margin-top: 2rem; /* gives breathing room above */
-  font-size: clamp(0.85rem, 1.3vw, 0.95rem); /* responsive text */
-  opacity: 0.9; /* slightly subtle */
+  margin-top: 2rem; 
+  font-size: clamp(0.85rem, 1.3vw, 0.95rem); 
+  opacity: 0.9; 
 }
 
 .article-source a {
-  color: var(--mustard-yellow); /* your theme color */
-  text-decoration: underline; /* clear it's a link */
-  transition: opacity 0.3s ease; /* smooth hover */
+  color: var(--mustard-yellow); 
+  text-decoration: underline; 
+  transition: opacity 0.3s ease; 
 }
 
 .article-source a:hover {
-  opacity: 1; /* brighter when hovered */
+  opacity: 1; 
 }
 
 
@@ -262,8 +256,3 @@ h1 {
     }
 }
 
-/* @media screen and (min-width:1200px){
-    #chapter-3-header h1{
-    font-size: 6rem;
-    }
-} */
