@@ -6,16 +6,16 @@
     --font-primary: "Big Shoulders Stencil", sans-serif;
 }
 
-@media (prefers-color-scheme:dark) {
+/* @media (prefers-color-scheme:dark) {
     :root {
         --bg-color: black;
         --fg-color: white;
     }
-}
+} */
 
 body {
-    background-color: var(--fg-color);
-    color: var(--bg-color);
+    background-color: var(--bg-color);
+    color: var(--fg-color);
     line-height: 1.6;
     margin: 0;
     padding: 0;
